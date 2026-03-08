@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppDataProvider } from "@/context/AppDataContext";
+import { ProfileProvider } from "@/context/ProfileContext";
 import AppLayout from "@/components/AppLayout";
 import Dashboard from "@/pages/Dashboard";
 import JobTracker from "@/pages/JobTracker";
@@ -20,21 +21,23 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <AppDataProvider>
-        <BrowserRouter>
-          <AppLayout>
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/jobs" element={<JobTracker />} />
-              <Route path="/interview-prep" element={<InterviewPrep />} />
-              <Route path="/ai-generator" element={<AIGenerator />} />
-              <Route path="/resume" element={<ResumeTips />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </AppLayout>
-        </BrowserRouter>
-      </AppDataProvider>
+      <ProfileProvider>
+        <AppDataProvider>
+          <BrowserRouter>
+            <AppLayout>
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/jobs" element={<JobTracker />} />
+                <Route path="/interview-prep" element={<InterviewPrep />} />
+                <Route path="/ai-generator" element={<AIGenerator />} />
+                <Route path="/resume" element={<ResumeTips />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </AppLayout>
+          </BrowserRouter>
+        </AppDataProvider>
+      </ProfileProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
