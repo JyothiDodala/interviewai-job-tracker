@@ -155,18 +155,18 @@ const Profile = () => {
                   </Button>
                 </div>
                 <Separator className="my-4" />
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <div className="flex items-center gap-2 text-sm">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-3">
+                  <div className="flex items-center gap-2 text-sm min-w-0">
                     <Mail className="h-4 w-4 text-muted-foreground shrink-0" />
-                    <span className={profile.email ? "text-foreground" : "text-muted-foreground"}>{displayEmail}</span>
+                    <span className={`truncate ${profile.email ? "text-foreground" : "text-muted-foreground"}`}>{displayEmail}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm min-w-0">
                     <MapPin className="h-4 w-4 text-muted-foreground shrink-0" />
-                    <span className={profile.location ? "text-foreground" : "text-muted-foreground"}>{displayLocation}</span>
+                    <span className={`truncate ${profile.location ? "text-foreground" : "text-muted-foreground"}`}>{displayLocation}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-sm min-w-0">
                     <Briefcase className="h-4 w-4 text-muted-foreground shrink-0" />
-                    <span className={profile.jobRole ? "text-foreground" : "text-muted-foreground"}>{displayRole}</span>
+                    <span className={`truncate ${profile.jobRole ? "text-foreground" : "text-muted-foreground"}`}>{displayRole}</span>
                   </div>
                 </div>
               </motion.div>
