@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
+# CareerPilot – AI Interview Prep & Job Tracker
 
-## Project info
+CareerPilot is a modern MERN stack web application designed to help students and developers track job applications and prepare for technical interviews efficiently.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The platform provides tools for managing job applications, practicing interview questions, and monitoring preparation progress through a user-friendly dashboard.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- User authentication (Register / Login)
+- Job application tracker
+- Interview preparation section
+- AI interview question generator
+- User profile management
+- Interview preparation progress tracking
+- Dashboard analytics
+- Responsive and modern UI
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+Frontend:
+- React.js
 - Tailwind CSS
 
-## How can I deploy this project?
+Backend:
+- Node.js
+- Express.js
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Database:
+- MongoDB
 
-## Can I connect a custom domain to my Lovable project?
+Other Technologies:
+- REST API
+- JWT Authentication
 
-Yes, you can!
+## Project Modules
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Authentication:
+Secure login and registration system for users.
 
+Job Application Tracker:
+Users can add job applications, edit application details, delete applications, and track application status.
+
+Interview Preparation:
+Provides technical interview questions from different categories such as JavaScript, React, Node.js, and Data Structures.
+
+AI Interview Question Generator:
+Users can enter a job role and the system generates relevant interview questions.
+
+User Profile:
+Users can manage their profile including skills, professional summary, and social links.
+
+Dashboard:
+Shows statistics such as total jobs applied, interviews scheduled, offers received, and questions practiced.
+
+## Installation
+
+1. Clone the repository
+git clone https://github.com/yourusername/careerpilot.git
+
+2. Navigate to the project folder
+cd careerpilot
+
+3. Install dependencies
+npm install
+
+4. Run the application
+npm start
+
+## Future Improvements
+
+- AI mock interview simulator
+- Resume analyzer
+- Job recommendation system
+- Email notifications for interviews
+- Advanced analytics dashboard
+
+## Project Purpose
+
+This project was developed to help students organize their job search process and improve interview preparation using modern web technologies.
+
+## Author
+
+Jyothi Dodali  
+B.Tech – Computer Science Engineering (AI & ML)
+B.Tech – Computer Science Engineering (AI & ML)
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
